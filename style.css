@@ -85,7 +85,15 @@ body {
 
 .text_1 h6{
     line-height:200%;
+<<<<<<< HEAD
     font-size: 1.21vw;
+=======
+    font-size: 1.2vw;
+}
+
+.pressetext:hover .text_1{
+    opacity: 1;
+>>>>>>> 31bdd7dafa0f2384243c3ed923a8a1a596e2c0da
 }
 
 
@@ -205,3 +213,7 @@ iframe {
     100% {opacity:1;}
     }
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 31bdd7dafa0f2384243c3ed923a8a1a596e2c0da
