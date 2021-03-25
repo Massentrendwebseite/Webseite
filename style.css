@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap%27');
 
+@media (max-width: 600px){
+    .smiley{
+        display: none;
+    }
+    .pressetext{
+        margin-top: -20vw;
+    }
+
+    .text_1{
+        text-align: center;
+        flex: 1 1 100%;
+        width: 40%;
+        font-size: 120%;
+        margin-left: 20vw;
+        margin-bottom: 2vw;
+
+    }
+
+}
+
 body {
     background-image: url("background_massentrend.png");  
     background-repeat: no-repeat;
@@ -12,10 +32,11 @@ body {
 
 /* rgb(0, 93, 39) */
 .pressetext {
+    display: flex;
     position: relative;
     margin-top: 35vw;
     background-color: white;
-    height: 60vw;
+    height: auto;
     width: 100%;
     transform: skewY(-3deg);
     transition: opacity 2s;
@@ -23,29 +44,28 @@ body {
 
 
 .smiley{
-    position: relative;
-    float: left;
+    margin-bottom: -10vw;
+    margin-top: -2vw;
+    flex: 1.5 1 0px;
     width: 60%;
-    height: 120%;
+    height: 160%;
     opacity: 0; 
     transform: skewY(-3deg);  
     transition: opacity 2s;
 }
 
 .pressetext:hover .smiley{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .text_1{
-
-    position: relative;
-    float: left;
-    margin-top: 2vw ;
-    margin-bottom: 2vw;
-  /*  display: inline-block; */
+    flex: 1 1 0px;
     width: 30%;
     height: 100%;
     font-size: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: -2vw;
     font-family:'Roboto Mono', sans-serif;
     transform: skewY(3deg); 
     opacity: 1;
@@ -54,8 +74,9 @@ body {
 
 .text_1 h1{
     margin-top: 2vw;
+    margin-bottom: 2vw;
     color: #097709;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .text_1 p{
@@ -64,11 +85,7 @@ body {
 
 .text_1 h6{
     line-height:200%;
-    font-size: 110%
-}
-
-.pressetext:hover .text_1{
-    opacity: 1;
+    font-size: 1.21vw;
 }
 
 
@@ -156,10 +173,6 @@ iframe {
 } 
 
 
-
-
-
-
 .fade-in {
     animation: fadeIn ease 4s;
     -webkit-animation: fadeIn ease 4s;
@@ -192,4 +205,3 @@ iframe {
     100% {opacity:1;}
     }
 
-    
